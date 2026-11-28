@@ -1,417 +1,403 @@
 <!doctype html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>GoLive Lebanon | Websites for Lebanese businesses</title>
-<meta name="description" content="We make websites for businesses in Lebanon. Free demo in 48 hours. Pay by Whish only if you like it.">
-<meta property="og:title" content="GoLive Lebanon | Websites for Lebanese businesses">
-<meta property="og:description" content="Free demo in 48 hours. Pay by Whish only if you like it.">
-<meta property="og:type" content="website">
-<meta name="theme-color" content="#FFF2CC">
-<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23FF6A1A'/%3E%3Ctext x='32' y='45' font-family='Arial Black,Arial' font-weight='900' font-size='38' fill='%23fff' text-anchor='middle'%3Eg%3C/text%3E%3C/svg%3E">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Figtree:wght@400;500;600;700&display=swap">
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>golive | Websites for businesses in Lebanon</title>
+<meta name="description" content="Professional websites for Lebanese businesses. See yours free. Pay only if you love it.">
+<meta name="theme-color" content="#F1ECFF">
+<meta property="og:title" content="golive | Websites for businesses in Lebanon">
+<meta property="og:description" content="Professional websites for Lebanese businesses. See yours free. Pay only if you love it.">
+<meta property="og:image" content="https://golivelebanon.site/img/work-restaurant.jpg">
+<meta property="og:url" content="https://golivelebanon.site/">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 34 34'%3E%3Crect width='34' height='34' rx='11' fill='%235A31F4'/%3E%3Cpath d='M12 22 22 12M14 12h8v8' fill='none' stroke='%23fff' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+<link rel="preload" href="/fonts/jakarta.woff2" as="font" type="font/woff2" crossorigin>
 <style>
-:root{
-  --ink:#231B3A; --soft:#665F7A; --line:#ECE7F2;
-  --sun:#FFF2CC; --orange:#FF6A1A; --orange-dk:#E2560A;
-  --mint:#DFF4E7; --sky:#E4EEFF; --rose:#FFE4EC; --white:#fff;
-  --display:"Bricolage Grotesque",Figtree,system-ui,sans-serif;
-}
-*{box-sizing:border-box}
-html{-webkit-text-size-adjust:100%}
-body{margin:0;font-family:Figtree,system-ui,-apple-system,"Segoe UI",sans-serif;font-size:17px;line-height:1.5;color:var(--ink);background:var(--white)}
-a{color:inherit}
-h1,h2,h3,p{margin:0}
-h1,h2,h3{font-family:var(--display);letter-spacing:-.02em}
-h1{font-size:clamp(40px,10.5vw,68px);line-height:1;font-weight:800}
-h2{font-size:clamp(30px,7.6vw,44px);line-height:1.05;font-weight:800}
-h3{font-size:20px;line-height:1.2;font-weight:700}
-p{color:var(--soft)}
-img{display:block;max-width:100%}
-.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
-:focus-visible{outline:3px solid var(--orange);outline-offset:3px;border-radius:8px}
-
-/* buttons */
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:56px;padding:0 26px;border:0;border-radius:16px;background:var(--orange);color:#fff;font:700 17px/1 Figtree,sans-serif;text-decoration:none;cursor:pointer;box-shadow:0 4px 0 var(--orange-dk);transition:transform .12s ease,box-shadow .12s ease}
-.btn:active{transform:translateY(3px);box-shadow:0 1px 0 var(--orange-dk)}
-.btn.wide{width:100%}
-.btn-line{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:0 22px;border-radius:16px;border:2px solid var(--ink);font-weight:700;text-decoration:none;background:#fff}
-.wa{width:22px;height:22px;flex:none}
-
-/* top bar */
-.top{position:sticky;top:0;z-index:20;background:rgba(255,242,204,.94);backdrop-filter:blur(8px)}
-.top.white{background:rgba(255,255,255,.94);border-bottom:1px solid var(--line)}
-.bar{display:flex;align-items:center;justify-content:space-between;height:64px}
-.logo{font-family:var(--display);font-weight:800;font-size:26px;letter-spacing:-.04em;text-decoration:none;display:flex;align-items:baseline}
-.logo b{color:var(--orange)}
-.logo small{font-family:Figtree,sans-serif;font-weight:600;font-size:13px;letter-spacing:0;color:var(--soft);margin-left:6px}
-.desk-nav{display:none}
-.top-cta{font-weight:700;font-size:15px;text-decoration:none;background:var(--ink);color:#fff;padding:10px 16px;border-radius:12px}
-
-/* pages */
-.page{display:none;padding-bottom:56px}
-body{padding-bottom:84px}
-.page.on{display:block}
-
-/* home hero */
-.hero{background:var(--sun);padding:18px 0 0;overflow:hidden}
-.hero h1{max-width:11ch}
-.hero .sub{font-size:19px;margin-top:16px;max-width:30ch;color:#4D4561}
-.hero .btn{margin-top:24px}
-.trust{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
-.trust span{background:#fff;border-radius:999px;padding:7px 13px;font-size:14px;font-weight:600;display:flex;align-items:center;gap:6px}
-.trust svg{width:16px;height:16px}
-.fan{position:relative;height:430px;margin-top:34px}
-.ph{position:absolute;width:196px;border-radius:30px;background:var(--ink);padding:6px;box-shadow:0 24px 40px rgba(35,27,58,.25)}
-.ph img{border-radius:24px;width:100%;aspect-ratio:1/2;object-fit:cover;object-position:top}
-.fan .ph:nth-child(1){left:50%;margin-left:-205px;top:56px;width:170px;transform:rotate(-8deg)}
-.fan .ph:nth-child(2){left:50%;margin-left:35px;top:56px;width:170px;transform:rotate(8deg)}
-.fan .ph:nth-child(3){left:50%;margin-left:-104px;top:0;width:208px;z-index:2}
-.fan-note{position:absolute;z-index:3;left:50%;bottom:22px;transform:translateX(-50%);background:#fff;border-radius:14px;padding:10px 14px;font-weight:700;font-size:14px;white-space:nowrap;box-shadow:0 10px 24px rgba(35,27,58,.15)}
-
-section.block{padding-top:56px}
-.head{display:flex;flex-direction:column;gap:10px;margin-bottom:24px}
-.head p{font-size:18px}
-
-/* steps */
-.steps{list-style:none;margin:0;padding:0;display:grid;gap:12px}
-.steps li{display:grid;grid-template-columns:48px 1fr;gap:14px;align-items:start;padding:18px;border-radius:20px;background:#FAF8FD}
-.steps i{font-style:normal;width:48px;height:48px;border-radius:14px;display:grid;place-items:center;font-family:var(--display);font-weight:800;font-size:22px}
-.steps li:nth-child(1) i{background:var(--sky)}.steps li:nth-child(2) i{background:var(--mint)}.steps li:nth-child(3) i{background:var(--rose)}
-.steps p{font-size:16px;margin-top:3px}
-.steps b{color:var(--ink)}
-
-/* work */
-.works{display:grid;gap:16px}
-.work{display:grid;grid-template-columns:128px 1fr;gap:16px;align-items:center;padding:14px;border-radius:24px;text-decoration:none}
-.work .shot{border-radius:18px;overflow:hidden;aspect-ratio:3/4;background:#fff;box-shadow:0 8px 18px rgba(35,27,58,.12)}
-.work .shot img{width:100%;height:100%;object-fit:cover;object-position:top}
-.work .kind{font-size:14px;font-weight:600;color:var(--soft)}
-.work h3{margin:2px 0 6px}
-.work p{font-size:15px}
-.visit{display:inline-block;margin-top:10px;font-weight:700;font-size:15px;text-decoration:underline;text-underline-offset:3px}
-.w1{background:#FCEEF2}.w2{background:#EFEAFF}.w3{background:#E8F1FF}.w4{background:#F2F2F2}
-.car{width:100%;height:100%;background:#111;color:#fff;padding:12px 10px;font-size:9px;display:flex;flex-direction:column;gap:7px}
-.car b{font-family:var(--display);font-size:13px;letter-spacing:.02em}
-.car .hc{background:linear-gradient(160deg,#2a2a2a,#0d0d0d);border-radius:8px;padding:10px 8px;border-left:3px solid #E01E2B}
-.car .hc strong{display:block;font-size:12px;line-height:1.1}
-.car .row{display:flex;justify-content:space-between;background:#1c1c1c;border-radius:6px;padding:6px 7px}
-.car .row em{font-style:normal;color:#E01E2B;font-weight:700}
-.car .bk{margin-top:auto;background:#E01E2B;border-radius:6px;text-align:center;padding:7px;font-weight:700}
-.more{margin-top:20px;font-weight:700}
-.more a{text-decoration:underline;text-underline-offset:3px}
-
-/* reviews (shown only when REVIEWS has items) */
-.reviews{display:grid;gap:12px}
-.review{background:#FAF8FD;border-radius:20px;padding:20px}
-.review p{color:var(--ink);font-size:17px}
-.review small{display:block;margin-top:10px;color:var(--soft);font-weight:600}
-
-/* price */
-.price-hero{background:var(--sun);padding:28px 0 32px}
-.amount{display:flex;align-items:baseline;gap:10px;margin-top:18px}
-.amount b{font-family:var(--display);font-size:84px;line-height:1;letter-spacing:-.04em}
-.amount span{font-size:18px;font-weight:600;color:#4D4561}
-.monthly{margin-top:10px;font-size:18px;color:#4D4561}
-.monthly b{color:var(--ink)}
-.incl{list-style:none;margin:0;padding:0;display:grid;gap:2px}
-.incl li{display:grid;grid-template-columns:30px 1fr auto;gap:12px;align-items:center;padding:14px 0;border-bottom:1px solid var(--line);font-weight:600}
-.incl li:last-child{border-bottom:0}
-.incl svg{width:26px;height:26px}
-.incl small{display:block;font-weight:500;color:var(--soft);font-size:14px}
-.soon{font-size:12px;font-weight:700;background:var(--sky);color:#2B4DB3;padding:5px 9px;border-radius:999px;white-space:nowrap}
-.whish{margin-top:28px;background:var(--mint);border-radius:22px;padding:22px}
-.whish p{color:var(--ink)}
-.whish strong{display:block;font-family:var(--display);font-size:36px;letter-spacing:.01em;margin:4px 0}
-.whish small{color:#3E6B53;font-weight:600;font-size:14px}
-.faq details{border-bottom:1px solid var(--line)}
-.faq summary{list-style:none;cursor:pointer;padding:18px 0;font-weight:700;font-size:17px;display:flex;justify-content:space-between;gap:12px}
-.faq summary::-webkit-details-marker{display:none}
-.faq summary::after{content:"+";font-size:24px;line-height:1;color:var(--orange)}
-.faq details[open] summary::after{content:"–"}
-.faq details p{padding-bottom:18px;font-size:16px}
-
-/* demo form */
-.demo-hero{background:var(--sun);padding:28px 0 30px}
-.demo-hero p{margin-top:10px;font-size:18px;color:#4D4561}
-form{display:grid;gap:18px;margin-top:26px}
-label{display:grid;gap:7px;font-weight:700;font-size:15px}
-label em{font-style:normal;font-weight:500;color:var(--soft)}
-input,textarea{font:500 17px Figtree,sans-serif;color:var(--ink);padding:15px 16px;border:2px solid var(--line);border-radius:14px;background:#fff;width:100%}
-input:focus,textarea:focus{outline:none;border-color:var(--orange)}
-textarea{min-height:90px;resize:vertical}
-fieldset{border:0;margin:0;padding:0}
-legend{font-weight:700;font-size:15px;margin-bottom:9px}
+@font-face{font-family:'Plus Jakarta Sans';font-weight:500 800;font-display:swap;src:url(/fonts/jakarta.woff2) format('woff2')}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#fff;font-family:'Plus Jakarta Sans',sans-serif;color:#160C33;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+button{font:inherit;border:0;background:none;color:inherit;cursor:pointer;text-align:left}
+.screen{width:100%;background:#fff;overflow:hidden}
+.px{padding-left:22px;padding-right:22px}
+h1,h2,h3{font-weight:800;letter-spacing:-0.03em;line-height:1.06}
+h2{font-size:31px}
+.eyebrow{font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#5A31F4}
+.mut{color:#5E5878;font-weight:500;line-height:1.5}
+.btn{display:flex;align-items:center;justify-content:center;gap:10px;height:58px;border-radius:18px;background:#5A31F4;color:#fff;font-weight:700;font-size:17px;box-shadow:0 10px 24px rgba(90,49,244,.32);cursor:pointer;transition:transform .15s ease,filter .15s ease}
+button.btn{width:100%}
+.btn:hover{filter:brightness(1.08)}.btn:active{transform:scale(.98)}
+.btn.ghost{background:#fff;color:#160C33;box-shadow:none;border:1.5px solid #D9CFF7}
+.btn.white{background:#fff;color:#160C33;box-shadow:none}
+.note{font-size:13px;color:#5E5878;font-weight:500;text-align:center}
+.nav{display:flex;justify-content:space-between;align-items:center;padding:16px 22px}
+.logo{display:flex;align-items:center;gap:9px;font-weight:800;font-size:22px;letter-spacing:-.03em}
+.mark{width:34px;height:34px;border-radius:11px;background:#5A31F4;display:flex;align-items:center;justify-content:center}
+.navbtn{height:42px;padding:0 16px;border-radius:13px;background:#160C33;color:#fff;font-size:14px;font-weight:700;display:flex;align-items:center}
+.hero{background:#F1ECFF;padding-bottom:0}
+.pill{display:inline-flex;align-items:center;gap:8px;background:#fff;border-radius:99px;padding:8px 14px;font-size:13px;font-weight:600}
+.dot{width:8px;height:8px;border-radius:50%;background:#22B573}
+.hl{background:linear-gradient(transparent 58%,#FFD95A 58%);padding:0 2px}
+.stage{position:relative;height:430px;margin-top:34px;display:flex;justify-content:center;max-width:430px;margin-left:auto;margin-right:auto}
+.disc{position:absolute;left:50%;top:40px;width:360px;height:360px;margin-left:-180px;border-radius:50%;background:#DDD0FF}
+.phone{position:relative;width:236px;height:430px;border-radius:38px 38px 0 0;border:8px solid #160C33;border-bottom:0;background:#fff;overflow:hidden;box-shadow:0 24px 60px rgba(22,12,51,.28)}
+.phone img{width:100%;height:auto;display:block}
+.chip{position:absolute;background:#fff;border-radius:16px;padding:11px 14px;font-size:13px;font-weight:700;display:flex;align-items:center;gap:8px;box-shadow:0 12px 30px rgba(22,12,51,.16)}
+.chip small{display:block;font-size:11px;font-weight:600;color:#5E5878}
+.ic{width:30px;height:30px;border-radius:10px;background:#F1ECFF;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.sec{padding:60px 22px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:26px}
+.tile{background:#F7F4FF;border-radius:20px;padding:18px 16px;display:flex;flex-direction:column;gap:12px}
+.tile .ic{width:40px;height:40px;border-radius:13px;background:#fff}
+.tile b{font-size:15.5px;font-weight:700;line-height:1.25;letter-spacing:-.01em}
+.tile span{font-size:13px;color:#5E5878;font-weight:500;line-height:1.4}
+.url{display:flex;align-items:center;gap:10px;background:#160C33;color:#fff;border-radius:18px;padding:16px 18px;margin-top:26px}
+.url .bar{flex:1;background:#2B1F52;border-radius:11px;padding:11px 13px;font-size:15px;font-weight:600;display:flex;align-items:center;gap:8px}
+.url .bar em{font-style:normal;color:#FFD95A}
+.work{background:#160C33;color:#fff;padding:60px 0}
+.step{display:flex;gap:16px;align-items:flex-start;padding:20px 0;border-bottom:1.5px solid #EEE9FA}
+.num{width:44px;height:44px;border-radius:15px;background:#5A31F4;color:#fff;font-weight:800;font-size:19px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.step b{font-size:17px;font-weight:700;letter-spacing:-.01em}
+.step p{font-size:14px;margin-top:4px}
+.time{margin-left:auto;font-size:12px;font-weight:700;color:#5A31F4;background:#F1ECFF;border-radius:99px;padding:6px 10px;white-space:nowrap}
+.price{background:#F1ECFF}
+.badge{display:inline-block;background:#FFD95A;color:#160C33;font-size:11.5px;font-weight:800;letter-spacing:.08em;border-radius:99px;padding:7px 12px}
+.amt{display:flex;align-items:flex-end;gap:12px;margin-top:18px}
+.amt b{font-size:64px;font-weight:800;letter-spacing:-.05em;line-height:.9}
+.amt span{font-size:14px;font-weight:600;color:#5E5878;padding-bottom:9px}
+.row{display:flex;gap:11px;align-items:center;font-size:15px;font-weight:600;padding:9px 0}
+.ck{width:22px;height:22px;border-radius:50%;background:#5A31F4;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.promise{margin-top:14px;background:#160C33;color:#fff;border-radius:24px;padding:22px;display:flex;gap:14px;align-items:center}
+.promise b{font-size:17px;font-weight:700;line-height:1.3;letter-spacing:-.01em}
+.q{width:100%;display:flex;justify-content:space-between;align-items:center;gap:14px;padding:20px 0;border-bottom:1.5px solid #EEE9FA;font-size:16px;font-weight:700;letter-spacing:-.01em;color:#160C33}
+.q svg{flex-shrink:0}
+.q .mi{display:none}.item.open .q .mi{display:block}.item.open .q .pl{display:none}
+.item.open .q{border:0;padding-bottom:10px}
+.ans{display:none;font-size:14.5px;font-weight:500;color:#5E5878;line-height:1.5;padding:0 0 18px;border-bottom:1.5px solid #EEE9FA}
+.item.open .ans{display:block}
+.item:last-child .q,.item:last-child .ans{border:0}
+.end{background:#5A31F4;color:#fff;padding:60px 22px 130px;text-align:center}
+label{font-size:14px;font-weight:700;display:block;margin-bottom:8px}
+.inp{display:block;width:100%;height:54px;border-radius:15px;border:1.5px solid #D9CFF7;padding:0 16px;font:inherit;font-size:16px;font-weight:600;color:#160C33;background:#fff;outline:none;-webkit-appearance:none;appearance:none}
+.inp::placeholder{color:#8A84A0;font-weight:500}
+.inp:focus{border-color:#5A31F4;box-shadow:0 0 0 4px #EDE6FF}
 .chips{display:flex;flex-wrap:wrap;gap:8px}
-.chips{position:relative}.chips input{position:absolute;left:0;top:0;width:1px;height:1px;opacity:0;pointer-events:none}
-.chips label{display:block;font-weight:600;font-size:15px;padding:11px 15px;border:2px solid var(--line);border-radius:999px;cursor:pointer}
-.chips input:checked+label{border-color:var(--ink);background:var(--ink);color:#fff}
-.chips input:focus-visible+label{outline:3px solid var(--orange);outline-offset:2px}
-.err{color:#C42C2C;font-weight:600;font-size:15px;min-height:1px}
-.after{font-size:14px;text-align:center}
+.c{height:44px;border-radius:99px;border:1.5px solid #D9CFF7;padding:0 16px;display:flex;align-items:center;font-size:14.5px;font-weight:600;color:#160C33}
+.c.on{background:#160C33;border-color:#160C33;color:#fff}
+.bubble{background:#E3FBD3;border-radius:18px 18px 4px 18px;padding:14px 16px;font-size:14.5px;font-weight:500;line-height:1.5;color:#12240A;overflow-wrap:anywhere}
+.err{color:#C62828;font-size:14px;font-weight:600;margin-top:14px;min-height:0}
+.err:empty{display:none}
+.plan{background:#fff;border-radius:24px;padding:20px 20px 14px;margin-top:12px}
+.plan.best{border:2.5px solid #5A31F4;padding:24px 20px 22px;box-shadow:0 20px 50px rgba(90,49,244,.2)}
+.row.sm{font-size:14px;padding:7px 0;align-items:flex-start;line-height:1.35}
+.ck.lt{background:#EDE6FF;margin-top:-1px}
+.sticky{position:fixed;left:50%;width:calc(100% - 24px);max-width:406px;bottom:14px;transform:translate(-50%,140%);transition:transform .35s ease;z-index:9;background:#160C33;border-radius:24px;padding:10px 10px 10px 18px;display:flex;align-items:center;justify-content:space-between;gap:10px;box-shadow:0 16px 40px rgba(22,12,51,.4)}
+.sticky.show{transform:translate(-50%,0)}
+.sticky b{display:block;color:#fff;font-size:14.5px;font-weight:700}
+.sticky small{display:block;color:#BBA8FF;font-size:12px;font-weight:600;margin-top:1px}
+.sbtn{height:50px;padding:0 18px;border-radius:17px;background:#5A31F4;color:#fff;font-weight:700;font-size:15px;display:flex;align-items:center;gap:8px;white-space:nowrap;flex-shrink:0}
+.sticky>div{min-width:0}
+@media (max-width:400px){.sticky{padding-left:16px;gap:8px}.sbtn{padding:0 13px;gap:6px;font-size:14.5px}.sticky small{font-size:11.5px}}
+#home{position:relative}
+.stats{display:flex;gap:8px;margin-top:22px}
+.stat{flex:1;background:#fff;border-radius:16px;padding:12px 6px;text-align:center}
+.stat b{display:block;font-size:19px;font-weight:800;letter-spacing:-.03em}
+.stat span{font-size:11.5px;font-weight:600;color:#5E5878}
+.pgrid{display:grid;grid-template-columns:1fr 1fr;gap:12px;padding:26px 16px 0}
+.pc{display:block;background:#231747;border-radius:22px;padding:10px 10px 14px;transition:transform .2s ease,background .2s ease}
+.pc:hover{transform:translateY(-3px);background:#2B1F52}
+.pc .sh{height:236px;border-radius:14px;overflow:hidden;background:#fff}
+.pc img{width:100%;height:auto;display:block}
+.pc .t{display:flex;align-items:center;gap:6px;margin-top:12px;font-size:10.5px;font-weight:800;letter-spacing:.1em}
+.live{color:#5BE39A}.dm{color:#BBA8FF}
+.pc h3{font-size:15.5px;margin-top:5px;letter-spacing:-.02em}
+.pc p{font-size:12.5px;font-weight:500;color:#C9BFEA;margin-top:2px}
+.svc{display:flex;gap:14px;align-items:flex-start;background:#F7F4FF;border-radius:22px;padding:18px;margin-top:12px}
+.svc .ic{width:46px;height:46px;border-radius:15px;background:#5A31F4}
+.svc b{font-size:17px;font-weight:800;letter-spacing:-.02em;display:block}
+.svc p{font-size:13.5px;font-weight:500;color:#5E5878;line-height:1.45;margin-top:4px}
+.svc em{font-style:normal;display:inline-block;margin-top:10px;font-size:12.5px;font-weight:700;color:#5A31F4;background:#fff;border-radius:99px;padding:5px 11px}
+.mo{background:#fff;border-radius:24px;padding:22px 20px;margin-top:12px}
+.mo .hd{display:flex;align-items:baseline;gap:8px}
+.mo .hd b{font-size:34px;font-weight:800;letter-spacing:-.04em}
+.mo .hd span{font-size:14px;font-weight:600;color:#5E5878}
+.lbl{font-size:11.5px;font-weight:800;letter-spacing:.1em;color:#5E5878;margin:16px 0 4px}
+.xr{display:flex;gap:11px;font-size:14px;font-weight:500;color:#5E5878;padding:6px 0;align-items:center}
+.rev{border:2px dashed #C9BBFF;border-radius:24px;padding:24px 20px;margin-top:24px;background:#FBFAFF}
+.about{background:#F1ECFF;border-radius:28px;padding:28px 22px;margin-top:44px}
 
-/* bottom tab bar (phones) */
-.tabs{position:fixed;left:0;right:0;bottom:0;z-index:30;background:#fff;border-top:1px solid var(--line);display:grid;grid-template-columns:repeat(4,1fr);padding:8px 8px calc(8px + env(safe-area-inset-bottom))}
-.tabs a{display:flex;flex-direction:column;align-items:center;gap:3px;text-decoration:none;font-size:12px;font-weight:600;color:var(--soft);padding:4px 0;border-radius:12px}
-.tabs svg{width:24px;height:24px}
-.tabs a.on{color:var(--ink)}
-.tabs a.on svg{color:var(--orange)}
-.tabs a.go{color:#fff;background:var(--orange)}
-.tabs a.go svg{color:#fff}
+/* Demo form sheet */
+.sheet{position:fixed;inset:0;z-index:20;background:rgba(22,12,51,.55);overflow-y:auto;-webkit-overflow-scrolling:touch;opacity:0;visibility:hidden;transition:opacity .25s ease,visibility .25s}
+.sheet.open{opacity:1;visibility:visible}
+#demo{background:#F1ECFF;min-height:100%;max-width:480px;margin:0 auto;transform:translateY(40px);transition:transform .3s ease}
+.sheet.open #demo{transform:none}
+.x{width:44px;height:44px;margin-right:-9px;display:flex;align-items:center;justify-content:center;border-radius:12px}
+.x:hover{background:#E6DEFF}
+html.lock{overflow:hidden}
 
-footer{margin-top:0;padding:26px 0 0;border-top:1px solid var(--line);font-size:15px;color:var(--soft)}
-footer .wrap{display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-between}
-
-/* bigger screens */
-@media (min-width:860px){
-  .tabs{display:none}
-  .page{padding-bottom:40px}
-  body{padding-bottom:30px}
-  .desk-nav{display:flex;gap:28px;align-items:center;font-weight:600;font-size:16px}
-  .desk-nav a{text-decoration:none;padding:8px 0}
-  .desk-nav a.on{box-shadow:inset 0 -3px 0 var(--orange)}
-  .top-cta{display:none}
-  .desk-nav .btn{min-height:46px;font-size:15px;padding:0 18px}
-  .hero{padding-top:40px}
-  .hero .wrap{display:grid;grid-template-columns:1fr 1fr;gap:20px;align-items:center}
-  .fan{margin-top:0;height:500px}
-  .works{grid-template-columns:1fr 1fr}
-  .steps{grid-template-columns:repeat(3,1fr)}
-  .steps li{grid-template-columns:1fr}
-  .price-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start}
-  .reviews{grid-template-columns:repeat(3,1fr)}
-  .demo-grid{display:grid;grid-template-columns:1fr 1.1fr;gap:56px}
+/* Wider screens: same design, wider layout */
+@media (min-width:700px){
+  #home .nav,#home .hero-in,#home .work>.px,#home .pgrid,#home .sec,#home .end{padding-left:max(32px,calc((100% - 1080px)/2));padding-right:max(32px,calc((100% - 1080px)/2))}
+  .pgrid{grid-template-columns:repeat(3,1fr);gap:18px}
+  .pc .sh{height:300px}
+  .grid{grid-template-columns:repeat(4,1fr)}
+  .svcs{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+  .svcs .svc{margin-top:0}
+  .url{max-width:560px}
+  h2{font-size:38px}
+  .sheet{padding:40px 16px}
+  #demo{min-height:0;border-radius:28px;overflow:hidden}
 }
-@media (prefers-reduced-motion:reduce){.btn{transition:none}}
-</style>
-</head>
-<body>
+@media (min-width:960px){
+  .hero-in{display:grid;grid-template-columns:1.05fr 1fr;gap:48px;align-items:end}
+  .hero-in>.px{padding:56px 0 96px!important;align-self:center}
+  .hero-in .stage{margin-top:40px;width:100%}
+  #home h1.big{font-size:58px}
+  #home .hero .mut{max-width:500px}
+  .hero-in .btn,.stats{max-width:440px}
+  .hero-in .note{max-width:440px}
+  .pc .sh{height:380px}
+  .pc h3{font-size:19px}.pc p{font-size:14px}
+  .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+  .steps .step{flex-direction:column;border-bottom:0!important;border-top:1.5px solid #EEE9FA}
+  .steps .time{margin-left:0}
+  .pwrap{display:grid;grid-template-columns:1fr 1fr;gap:16px;align-items:start;margin-top:26px}
+  .pwrap .plan.best,.pwrap .mo{margin-top:0!important}
+  .ra{display:grid;grid-template-columns:1fr 1fr;gap:16px;align-items:stretch}
+  .ra .rev,.ra .about{margin-top:24px}
+  .faq{max-width:760px}
+  .end h2{max-width:640px;margin-left:auto;margin-right:auto}
+}
+</style></head><body>
 
-<header class="top" id="topbar"><div class="wrap bar">
-  <a class="logo" href="#home" data-go="home">golive<b>.</b><small>Lebanon</small></a>
-  <nav class="desk-nav" aria-label="Main">
-    <a href="#home" data-go="home">Home</a><a href="#work" data-go="work">Our work</a><a href="#price" data-go="price">Price</a>
-    <a class="btn" href="#demo" data-go="demo">Get a free demo</a>
-  </nav>
-  <a class="top-cta" href="#demo" data-go="demo">Free demo</a>
-</div></header>
-
-<main>
 <!-- ============ HOME ============ -->
-<div class="page" id="p-home">
-  <div class="hero"><div class="wrap">
-    <div>
-      <h1>Your business deserves a real website.</h1>
-      <p class="sub">We design it and put it online for you. See it free in 48 hours, pay only if you like it.</p>
-      <a class="btn" href="#demo" data-go="demo">Get my free demo</a>
-      <div class="trust">
-        <span><svg viewBox="0 0 24 24" fill="none" stroke="#1E9E5A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>$0 to see it</span>
-        <span><svg viewBox="0 0 24 24" fill="none" stroke="#1E9E5A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Pay by Whish</span>
-        <span><svg viewBox="0 0 24 24" fill="none" stroke="#1E9E5A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Domain included</span>
-      </div>
-    </div>
-    <div class="fan">
-      <a class="ph" href="https://answerly.shop" target="_blank" rel="noopener" aria-label="Answerly website"><img src="img/answerly.jpg" alt="Answerly website on a phone"></a>
-      <a class="ph" href="https://breezys.site" target="_blank" rel="noopener" aria-label="Breezy website"><img src="img/breezy.jpg" alt="Breezy website on a phone"></a>
-      <a class="ph" href="https://lestrendsdemimi.com" target="_blank" rel="noopener" aria-label="Les Trends de Mimi website"><img src="img/mimi.jpg" alt="Les Trends de Mimi online store on a phone"></a>
-      <span class="fan-note">Websites we made, live now</span>
-    </div>
-  </div></div>
-
-  <section class="block"><div class="wrap">
-    <div class="head"><h2>Three steps. That's all.</h2></div>
-    <ol class="steps">
-      <li><i>1</i><div><h3>Send your Instagram</h3><p>Fill the short form. It opens WhatsApp with your message ready.</p></div></li>
-      <li><i>2</i><div><h3>See your website free</h3><p>In 48 hours you open it on your phone, with your logo, photos and prices. Ask for any change.</p></div></li>
-      <li><i>3</i><div><h3>Like it? Go live</h3><p>Pay <b>$99</b> by Whish and it's online on your own address. Don't like it? You pay nothing.</p></div></li>
-    </ol>
-  </div></section>
-
-  <section class="block" id="reviews-home" hidden><div class="wrap">
-    <div class="head"><h2>What our clients say</h2></div>
-    <div class="reviews" data-reviews></div>
-  </div></section>
-
-  <section class="block"><div class="wrap">
-    <div class="head"><h2>Some of our work</h2></div>
-    <div class="works" data-works="2"></div>
-    <p class="more"><a href="#work" data-go="work">See all our work</a></p>
-  </div></section>
+<div class="screen" id="home">
+<div class="hero">
+  <div class="nav">
+    <a class="logo" href="/" aria-label="golive home"><div class="mark"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 18 18 6M9 6h9v9"/></svg></div>golive</a>
+    <a class="navbtn" href="#demo" data-open>Free demo</a>
+  </div>
+  <div class="hero-in">
+  <div class="px" style="padding-top:22px">
+    <div class="pill"><span class="dot"></span>Websites for businesses in Lebanon</div>
+    <h1 class="big" style="font-size:43px;margin-top:20px">Your business website, ready in <span class="hl">48 hours.</span></h1>
+    <p class="mut" style="font-size:17px;margin-top:16px">Professional websites for Lebanese businesses. See yours free. Pay only if you love it.</p>
+    <a class="btn" id="heroBtn" href="#demo" data-open style="margin-top:24px"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-12.3 7.4L3 21l2.1-5.7A8.4 8.4 0 1 1 21 11.5z"/></svg>Get my free demo</a>
+    <p class="note" style="margin-top:12px">Opens WhatsApp with your message ready</p>
+    <div class="stats"><div class="stat"><b>$99</b><span>one time</span></div><div class="stat"><b>48h</b><span>delivery</span></div><div class="stat"><b>Free</b><span>demo first</span></div></div>
+  </div>
+  <div class="stage">
+    <div class="disc"></div>
+    <div class="phone"><img src="/img/work-restaurant.jpg" width="468" height="1013" alt="A golive restaurant website shown on a phone" fetchpriority="high"></div>
+    <div class="chip" style="left:14px;top:74px"><div class="ic"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#5A31F4" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg></div><div>yourbusiness.com<small>Your own domain</small></div></div>
+    <div class="chip" style="right:12px;top:214px"><div class="ic"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#5A31F4" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div><div>Live in 48h<small>From one message</small></div></div>
+    <div class="chip" style="left:22px;bottom:30px"><div class="ic" style="background:#E3FBD3"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#1E8E3E" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-12.3 7.4L3 21l2.1-5.7A8.4 8.4 0 1 1 21 11.5z"/></svg></div><div>New booking<small>Sent to your WhatsApp</small></div></div>
+  </div>
+  </div>
 </div>
 
-<!-- ============ WORK ============ -->
-<div class="page" id="p-work">
-  <section class="block" style="padding-top:28px"><div class="wrap">
-    <div class="head"><h2>Our work</h2><p>Real websites for real businesses. Tap one to open it.</p></div>
-    <div class="works" data-works="all"></div>
-  </div></section>
-  <section class="block" id="reviews-work" hidden><div class="wrap">
-    <div class="head"><h2>What our clients say</h2></div>
-    <div class="reviews" data-reviews></div>
-  </div></section>
-  <section class="block"><div class="wrap">
-    <h2 style="max-width:16ch">Yours could be next.</h2>
-    <p style="margin:10px 0 20px;font-size:18px">Shops, restaurants, clinics, car showrooms, guesthouses. Tell us what you do.</p>
-    <a class="btn" href="#demo" data-go="demo">Get my free demo</a>
-  </div></section>
+<div class="work" id="work">
+  <div class="px">
+    <div class="eyebrow" style="color:#BBA8FF">Our work</div>
+    <h2 style="margin-top:12px">See the quality before you ask.</h2>
+    <p style="font-size:15px;font-weight:500;color:#C9BFEA;line-height:1.5;margin-top:12px">Live sites you can open. Demos show what yours could look like.</p>
+  </div>
+  <div class="pgrid">
+    <a class="pc" href="https://lestrendsdemimi.com" target="_blank" rel="noopener"><div class="sh"><img src="/img/work-mimi.jpg" width="468" height="1013" loading="lazy" alt="Les Trends de Mimi online store on a phone"></div><div class="t"><span class="live">● LIVE</span></div><h3>Les Trends de Mimi</h3><p>Online store</p></a>
+    <a class="pc" href="/demo/restaurant/"><div class="sh"><img src="/img/work-restaurant.jpg" width="468" height="1013" loading="lazy" alt="Zaatar &amp; Co. demo restaurant website on a phone"></div><div class="t"><span class="dm">DEMO</span></div><h3>Zaatar & Co.</h3><p>Restaurant</p></a>
+    <a class="pc" href="/demo/salon/"><div class="sh"><img src="/img/work-salon.jpg" width="468" height="1013" loading="lazy" alt="Maison Lina demo beauty salon website on a phone"></div><div class="t"><span class="dm">DEMO</span></div><h3>Maison Lina</h3><p>Beauty salon</p></a>
+    <a class="pc" href="/demo/guesthouse/"><div class="sh"><img src="/img/work-guesthouse.jpg" width="468" height="1013" loading="lazy" alt="Dar Batroun demo guesthouse website on a phone"></div><div class="t"><span class="dm">DEMO</span></div><h3>Dar Batroun</h3><p>Guesthouse</p></a>
+    <a class="pc" href="https://breezys.site" target="_blank" rel="noopener"><div class="sh"><img src="/img/work-breezy.jpg" width="468" height="1013" loading="lazy" alt="Breezy app website on a phone"></div><div class="t"><span class="live">● LIVE</span></div><h3>Breezy</h3><p>App website</p></a>
+    <a class="pc" href="https://answerly.shop" target="_blank" rel="noopener"><div class="sh"><img src="/img/work-answerly.jpg" width="468" height="1013" loading="lazy" alt="Answerly business website on a phone"></div><div class="t"><span class="live">● LIVE</span></div><h3>Answerly</h3><p>Business website</p></a>
+  </div>
 </div>
 
-<!-- ============ PRICE ============ -->
-<div class="page" id="p-price">
-  <div class="price-hero"><div class="wrap">
-    <h2>One simple price.</h2>
-    <div class="amount"><b>$99</b><span>one time</span></div>
-    <p class="monthly">Then <b>$9 a month</b> to keep it online. Stop any time.</p>
-  </div></div>
-  <section class="block" style="padding-top:28px"><div class="wrap price-grid">
-    <div>
-      <h3 style="font-size:24px;margin-bottom:6px">What you get</h3>
-      <ul class="incl">
-        <li><svg viewBox="0 0 24 24" fill="none" stroke="#1E9E5A" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10" fill="#DFF4E7" stroke="none"/><path d="M7.5 12.5l3 3 6-6.5"/></svg><div>A website made for you<small>Your logo, colours, photos and prices</small></div></li>
-        <li><svg viewBox="0 0 24 24" fill="none" stroke="#1E9E5A" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10" fill="#DFF4E7" stroke="none"/><path d="M7.5 12.5l3 3 6-6.5"/></svg><div>Your own domain, included<small>Like www.yourbusiness.com, in your name</small></div></li>
-        <li><svg viewBox="0 0 24 24" fill="none" stroke="#1E9E5A" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10" fill="#DFF4E7" stroke="none"/><path d="M7.5 12.5l3 3 6-6.5"/></svg><div>Secure and always online<small>Hosting with the https padlock</small></div></li>
-        <li><svg viewBox="0 0 24 24" fill="none" stroke="#1E9E5A" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10" fill="#DFF4E7" stroke="none"/><path d="M7.5 12.5l3 3 6-6.5"/></svg><div>Orders on WhatsApp<small>Customers order or book in one tap</small></div></li>
-        <li><svg viewBox="0 0 24 24" fill="none" stroke="#1E9E5A" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10" fill="#DFF4E7" stroke="none"/><path d="M7.5 12.5l3 3 6-6.5"/></svg><div>Changes included<small>New prices or photos? Send them, we update</small></div></li>
-        <li><svg viewBox="0 0 24 24" fill="none" stroke="#2B4DB3" stroke-width="2.4" stroke-linecap="round"><circle cx="12" cy="12" r="10" fill="#E4EEFF" stroke="none"/><rect x="8" y="11" width="8" height="6" rx="1.2"/><path d="M9.8 11V9.3a2.2 2.2 0 0 1 4.4 0V11"/></svg><div>Your private dashboard<small>Track orders. Only you can log in and edit</small></div><span class="soon">Coming soon</span></li>
-      </ul>
-      <a class="btn wide" style="margin-top:22px" href="#demo" data-go="demo">Get my free demo</a>
-      <p style="font-size:14px;margin-top:12px">Big online shops with many products may cost more. You always know the price before paying.</p>
-    </div>
-    <div>
-      <div class="whish">
-        <p>Pay by Whish Money, only after you approve your demo:</p>
-        <strong data-whish>81 900 002</strong>
-        <small>No bank card needed. We confirm on WhatsApp.</small>
-      </div>
-      <div class="faq" style="margin-top:22px">
-        <details><summary>Do I pay before I see it?</summary><p>No. You see your website first. You pay only if you like it.</p></details>
-        <details><summary>What do you need from me?</summary><p>Your Instagram page. If you have a logo and a price list, send them too.</p></details>
-        <details><summary>Can someone else change my website?</summary><p>No. Only you decide what changes, and we make the changes you ask for. Soon you will also have a private dashboard only you can log in to.</p></details>
-        <details><summary>Is the website really mine?</summary><p>Yes. The domain is in your business name and stays yours, even if you stop working with us.</p></details>
-      </div>
-    </div>
-  </div></section>
+<div class="sec">
+  <div class="eyebrow">How it works</div>
+  <h2 style="margin-top:12px">Three steps. You do one.</h2>
+  <div class="steps" style="margin-top:14px">
+    <div class="step"><div class="num">1</div><div><b>Request your free demo</b><p class="mut">Tell us your business name and Instagram page.</p></div><div class="time">2 min</div></div>
+    <div class="step"><div class="num">2</div><div><b>We build your website</b><p class="mut">With your branding, photos and prices.</p></div><div class="time">48 hours</div></div>
+    <div class="step" style="border:0"><div class="num">3</div><div><b>Approve and go live</b><p class="mut">Happy with it? Pay by Whish and we launch.</p></div><div class="time">Same day</div></div>
+  </div>
 </div>
 
-<!-- ============ DEMO FORM ============ -->
-<div class="page" id="p-demo">
-  <div class="demo-hero"><div class="wrap">
-    <h2>Get your free demo</h2>
-    <p>A few quick questions. WhatsApp opens with your message ready, you just press send.</p>
-  </div></div>
-  <section class="block" style="padding-top:8px"><div class="wrap demo-grid">
-    <form id="demo-form" novalidate>
-      <label>Your name<input name="name" autocomplete="name" placeholder="Rami"></label>
-      <label>Business name<input name="biz" autocomplete="organization" placeholder="Rami's Bakery"></label>
-      <label><span class="lt">Instagram page <em>(optional)</em></span><input name="ig" placeholder="@ramisbakery" autocapitalize="off"></label>
-      <fieldset>
-        <legend>What kind of business?</legend>
-        <div class="chips">
-          <input type="radio" name="kind" id="k1" value="Shop or brand"><label for="k1">Shop or brand</label>
-          <input type="radio" name="kind" id="k2" value="Restaurant or café"><label for="k2">Restaurant or café</label>
-          <input type="radio" name="kind" id="k3" value="Clinic or salon"><label for="k3">Clinic or salon</label>
-          <input type="radio" name="kind" id="k4" value="Cars"><label for="k4">Cars</label>
-          <input type="radio" name="kind" id="k5" value="Guesthouse"><label for="k5">Guesthouse</label>
-          <input type="radio" name="kind" id="k6" value="Other"><label for="k6">Other</label>
-        </div>
-      </fieldset>
-      <label><span class="lt">Anything you want on it? <em>(optional)</em></span><textarea name="note" placeholder="Menu with prices, a booking button…"></textarea></label>
-      <p class="err" id="err" role="alert"></p>
-      <button class="btn wide" type="submit"><svg class="wa" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .1-3.3-.8-2.8-1.1-4.5-3.9-4.6-4.1-.1-.2-1.1-1.5-1.1-2.8 0-1.3.7-2 1-2.3.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .5l-.4.6-.4.4c-.1.2-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.3 2.4 1.5.3.1.5.1.6-.1l.9-1c.2-.3.4-.2.7-.1l1.9.9c.3.1.5.2.5.3.1.2.1.7-.1 1.3z"/></svg>Send on WhatsApp</button>
-      <p class="after">Free, no commitment. We reply on WhatsApp.</p>
-    </form>
-    <div class="steps-side" style="padding-top:26px">
-      <ol class="steps">
-        <li><i>1</i><div><h3>You send this</h3><p>Takes 30 seconds.</p></div></li>
-        <li><i>2</i><div><h3>We build your demo</h3><p>Ready on your phone in 48 hours.</p></div></li>
-        <li><i>3</i><div><h3>You decide</h3><p>Like it? Pay $99 by Whish. If not, you pay nothing.</p></div></li>
-      </ol>
-    </div>
-  </div></section>
+<div class="sec" style="padding-top:0">
+  <div class="eyebrow">Why golive</div>
+  <h2 style="margin-top:12px">Everything included. Nothing to learn.</h2>
+  <div class="url"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#BBA8FF" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3.500 3 14.500 0 18M12 3c-3 3.500-3 14.500 0 18"/></svg>
+    <div class="bar"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#22B573" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg><em>yourbusiness</em>.com</div></div>
+  <p class="note" style="margin-top:10px;text-align:left">Your own domain, set up for you.</p>
+  <div class="grid">
+    <div class="tile"><div class="ic"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="#5A31F4" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9M16.5 3.5a2.100 2.100 0 0 1 3 3L7 19l-4 1 1-4z"/></svg></div><b>Designed and written for you</b><span>Your logo, photos and prices.</span></div>
+    <div class="tile"><div class="ic"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="#5A31F4" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-12.3 7.4L3 21l2.1-5.7A8.4 8.4 0 1 1 21 11.5z"/></svg></div><b>Orders on WhatsApp</b><span>One tap from every page.</span></div>
+    <div class="tile"><div class="ic"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="#5A31F4" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 4 6v6c0 4.5 3.400 8 8 9 4.600-1 8-4.500 8-9V6z"/><path d="m9 12 2 2 4-4"/></svg></div><b>Hosting and security</b><span>Fast, safe, always online.</span></div>
+    <div class="tile"><div class="ic"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="#5A31F4" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 0 1 15.500-6.200L21 8M21 3v5h-5M21 12a9 9 0 0 1-15.500 6.200L3 16M3 21v-5h5"/></svg></div><b>Changes when you need</b><span>Message us. We update it.</span></div>
+  </div>
 </div>
-</main>
 
-<footer><div class="wrap"><span><b style="color:var(--ink)">golive.</b> Websites for businesses in Lebanon</span><a href="#demo" data-go="demo">Contact us on WhatsApp</a></div></footer>
+<div class="sec" style="padding-top:0">
+  <div class="eyebrow">What we build</div>
+  <h2 style="margin-top:12px">Find the one for your business.</h2>
+  <div class="svcs" style="margin-top:22px">
+  <div class="svc"><div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="3"/><path d="M3 9h18"/></svg></div><div><b>Business websites</b><p>Restaurants, cafés, clinics, salons. Menu or services, photos, map and WhatsApp.</p><em>$99</em></div></div>
+  <div class="svc"><div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 9h16l-1 11H5zM8 9V7a4 4 0 0 1 8 0v2"/></svg></div><div><b>Online stores</b><p>Shops that sell products. Catalogue, prices, categories and ordering.</p><em>From $249</em></div></div>
+  <div class="svc"><div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="5" width="16" height="16" rx="3"/><path d="M4 10h16M9 3v4M15 3v4"/></svg></div><div><b>Booking websites</b><p>Hotels, guesthouses, clinics, salons. Appointments and reservations.</p><em>From $199</em></div></div>
+  </div>
+</div>
 
-<nav class="tabs" aria-label="Pages">
-  <a href="#home" data-go="home"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l9-7 9 7v9a1 1 0 0 1-1 1h-5v-6h-6v6H4a1 1 0 0 1-1-1z"/></svg>Home</a>
-  <a href="#work" data-go="work"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="2" width="12" height="20" rx="3"/><path d="M10.5 18h3"/></svg>Our work</a>
-  <a href="#price" data-go="price"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 12l-8 8-9-9V3h8z"/><circle cx="7.5" cy="7.5" r="1.5"/></svg>Price</a>
-  <a class="go" href="#demo" data-go="demo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l2.5 5.5L20 9.3l-4 4 1 5.7-5-2.8-5 2.8 1-5.7-4-4 5.5-.8z"/></svg>Free demo</a>
-</nav>
+<div class="sec price" id="price">
+  <div class="eyebrow">Price</div>
+  <h2 style="margin-top:12px">One simple price. No hidden fees.</h2>
+  <div class="pwrap">
+  <div class="plan best" style="margin-top:26px">
+    <div class="badge">BUSINESS WEBSITE</div>
+    <div class="amt"><b>$99</b><span>one time</span></div>
+    <div style="margin:16px 0 20px;border-top:1.5px solid #EEE9FA;padding-top:10px">
+      <div class="row"><div class="ck"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5 9-10"/></svg></div>Custom website design</div><div class="row"><div class="ck"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5 9-10"/></svg></div>Mobile-friendly layout</div><div class="row"><div class="ck"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5 9-10"/></svg></div>Your business info and photos</div><div class="row"><div class="ck"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5 9-10"/></svg></div>WhatsApp ordering or booking</div><div class="row"><div class="ck"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5 9-10"/></svg></div>Custom domain setup</div><div class="row"><div class="ck"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5 9-10"/></svg></div>Free demo before payment</div><div class="row"><div class="ck"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5 9-10"/></svg></div>Website launch</div>
+    </div>
+    <a class="btn" href="#demo" data-open><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-12.3 7.4L3 21l2.1-5.7A8.4 8.4 0 1 1 21 11.5z"/></svg>Get my free demo</a>
+  </div>
+  <div class="mo">
+    <div class="hd"><b>$9</b><span>a month, after launch</span></div>
+    <div class="lbl">INCLUDED</div>
+    <div class="row sm"><div class="ck lt"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#5A31F4" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5 9-10"/></svg></div>Hosting and security</div><div class="row sm"><div class="ck lt"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#5A31F4" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5 9-10"/></svg></div>Domain renewal</div><div class="row sm"><div class="ck lt"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#5A31F4" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5 9-10"/></svg></div>Small changes: text, photos, prices, hours</div>
+    <div class="lbl">EXTRA, QUOTED FIRST</div>
+    <div class="xr"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#5A31F4" stroke-width="2.8" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg>New pages or new features</div>
+    <div class="xr"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#5A31F4" stroke-width="2.8" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg>A full redesign</div>
+  </div>
+  </div>
+  <div class="promise"><div class="ic" style="width:46px;height:46px;border-radius:15px;background:#2B1F52"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#FFD95A" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 4 6v6c0 4.5 3.400 8 8 9 4.600-1 8-4.500 8-9V6z"/><path d="m9 12 2 2 4-4"/></svg></div><b>You see your website first. You pay only if you love it.</b></div>
+</div>
+
+<div class="sec">
+  <div class="eyebrow">Reviews</div>
+  <h2 style="margin-top:12px">Our first reviews are on the way.</h2>
+  <div class="ra">
+  <div class="rev">
+    <p style="font-size:16px;font-weight:600;line-height:1.5">golive is new. Reviews from our first clients will appear here, with their names and businesses.</p>
+    <p class="mut" style="font-size:14.5px;margin-top:10px">Until then, judge us by the work. Open the live sites above.</p>
+  </div>
+  <div class="about">
+    <div class="eyebrow">About golive</div>
+    <p style="font-size:21px;font-weight:800;letter-spacing:-.02em;line-height:1.25;margin-top:12px">Built by a Lebanese team with one goal: make a professional website something every local business can afford.</p>
+    <p class="mut" style="font-size:14.5px;margin-top:12px">Most businesses here live on Instagram and WhatsApp. We give them a home of their own online, without agency prices.</p>
+  </div>
+  </div>
+</div>
+
+<div class="sec" style="padding-top:0" id="faq">
+  <div class="eyebrow">Questions</div>
+  <h2 style="margin-top:12px">Clear answers</h2>
+  <div class="faq" style="margin-top:10px">
+    <div class="item open"><button class="q" type="button" aria-expanded="true">Do I pay anything before I see my demo?<svg class="mi" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#5A31F4" stroke-width="2.8" stroke-linecap="round"><path d="M5 12h14"/></svg><svg class="pl" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#5A31F4" stroke-width="2.8" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></button><div class="ans">No. We build your demo first, for free. You pay only if you approve it.</div></div>
+    <div class="item"><button class="q" type="button" aria-expanded="false">How long does it take?<svg class="mi" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#5A31F4" stroke-width="2.8" stroke-linecap="round"><path d="M5 12h14"/></svg><svg class="pl" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#5A31F4" stroke-width="2.8" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></button><div class="ans">[answer coming]</div></div>
+    <div class="item"><button class="q" type="button" aria-expanded="false">What is included in the $99?<svg class="mi" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#5A31F4" stroke-width="2.8" stroke-linecap="round"><path d="M5 12h14"/></svg><svg class="pl" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#5A31F4" stroke-width="2.8" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></button><div class="ans">[answer coming]</div></div>
+    <div class="item"><button class="q" type="button" aria-expanded="false">Why is there a $9 monthly fee?<svg class="mi" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#5A31F4" stroke-width="2.8" stroke-linecap="round"><path d="M5 12h14"/></svg><svg class="pl" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#5A31F4" stroke-width="2.8" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></button><div class="ans">[answer coming]</div></div>
+    <div class="item"><button class="q" type="button" aria-expanded="false">Do I own my website and domain?<svg class="mi" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#5A31F4" stroke-width="2.8" stroke-linecap="round"><path d="M5 12h14"/></svg><svg class="pl" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#5A31F4" stroke-width="2.8" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></button><div class="ans">[answer coming]</div></div>
+    <div class="item"><button class="q" type="button" aria-expanded="false">What happens if I cancel?<svg class="mi" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#5A31F4" stroke-width="2.8" stroke-linecap="round"><path d="M5 12h14"/></svg><svg class="pl" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#5A31F4" stroke-width="2.8" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></button><div class="ans">[answer coming]</div></div>
+    <div class="item"><button class="q" type="button" aria-expanded="false">Can I request changes?<svg class="mi" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#5A31F4" stroke-width="2.8" stroke-linecap="round"><path d="M5 12h14"/></svg><svg class="pl" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#5A31F4" stroke-width="2.8" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></button><div class="ans">[answer coming]</div></div>
+    <div class="item"><button class="q" type="button" aria-expanded="false">Can you build an online store?<svg class="mi" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#5A31F4" stroke-width="2.8" stroke-linecap="round"><path d="M5 12h14"/></svg><svg class="pl" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#5A31F4" stroke-width="2.8" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></button><div class="ans">[answer coming]</div></div>
+  </div>
+</div>
+
+<div class="end">
+  <h2 style="font-size:35px">See your website before you decide.</h2>
+  <p style="font-size:16px;font-weight:500;color:#E4DCFF;margin-top:14px;line-height:1.5">Free demo in 48 hours. No payment.</p>
+</div>
+<div class="sticky" id="sticky"><div><b>Free demo first</b><small>$99 · ready in 48 hours</small></div><a class="sbtn" href="#demo" data-open><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-12.3 7.4L3 21l2.1-5.7A8.4 8.4 0 1 1 21 11.5z"/></svg>Get my free demo</a></div>
+</div>
+
+<!-- ============ DEMO SHEET ============ -->
+<div class="sheet" id="sheet" role="dialog" aria-modal="true" aria-labelledby="demoTitle" aria-hidden="true">
+<div class="screen" id="demo">
+  <div class="nav"><div class="logo"><div class="mark"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 18 18 6M9 6h9v9"/></svg></div>golive</div>
+  <button class="x" type="button" id="close" aria-label="Close"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#160C33" stroke-width="2.4" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></svg></button></div>
+  <form class="px" id="demo-form" novalidate style="padding-top:14px;padding-bottom:30px">
+    <h1 id="demoTitle" style="font-size:36px">Get your free demo</h1>
+    <p class="mut" style="font-size:16px;margin-top:10px">Three quick answers. Then just press send.</p>
+    <div style="background:#fff;border-radius:26px;padding:22px 18px;margin-top:22px;display:flex;flex-direction:column;gap:18px">
+      <div><label for="f-name">Your name</label><input class="inp" id="f-name" name="name" autocomplete="name" placeholder="Your name"></div>
+      <div><label for="f-biz">Business name</label><input class="inp" id="f-biz" name="biz" autocomplete="organization" placeholder="Your business name"></div>
+      <div><label for="f-ig">Instagram page <span style="color:#8A84A0;font-weight:500">(optional)</span></label><input class="inp" id="f-ig" name="ig" autocapitalize="off" autocorrect="off" spellcheck="false" placeholder="@yourbusiness"></div>
+      <div><label id="kindLbl">What kind of business?</label><div class="chips" role="radiogroup" aria-labelledby="kindLbl"><button type="button" class="c on" role="radio" aria-checked="true" data-k="restaurant">Restaurant</button><button type="button" class="c" role="radio" aria-checked="false" data-k="café">Café</button><button type="button" class="c" role="radio" aria-checked="false" data-k="salon">Salon</button><button type="button" class="c" role="radio" aria-checked="false" data-k="shop">Shop</button><button type="button" class="c" role="radio" aria-checked="false" data-k="clinic">Clinic</button><button type="button" class="c" role="radio" aria-checked="false" data-k="business">Other</button></div></div>
+    </div>
+    <div style="margin-top:20px;font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#5E5878">Your message, ready to send</div>
+    <div class="bubble" id="bubble" style="margin-top:10px" aria-live="polite"></div>
+    <p class="err" id="err" role="alert"></p>
+    <button class="btn" type="submit" style="margin-top:20px;background:#0F7A40;box-shadow:0 10px 24px rgba(15,122,64,.3)"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-12.3 7.4L3 21l2.1-5.7A8.4 8.4 0 1 1 21 11.5z"/></svg>Send on WhatsApp</button>
+    <p class="note" style="margin-top:12px">Free. Your demo is ready in 48 hours.</p>
+  </form>
+</div>
+</div>
 
 <script>
-/* ====== SETTINGS: change only these lines ====== */
-var WHATSAPP_NUMBER = "96181900002";
-var WHISH_NUMBER    = "81 900 002";
-/* Real client reviews only. Example: { text: "Great work, fast.", name: "Rima", business: "Rima's Shop" } */
-var REVIEWS = [];
-/* =============================================== */
-
-var WORKS = [
-  { name:"Les Trends de Mimi", kind:"Online clothing store", text:"A full online shop with collections, cart and orders, for a brand with 58K Instagram followers.", url:"https://lestrendsdemimi.com", img:"img/mimi.jpg", cls:"w1" },
-  { name:"Answerly", kind:"Tech startup", text:"A clean, fast website that explains the app and lets people start free.", url:"https://answerly.shop", img:"img/answerly.jpg", cls:"w2" },
-  { name:"Breezy", kind:"Mobile app", text:"App website that walks visitors into a personal plan in 60 seconds.", url:"https://breezys.site", img:"img/breezy.jpg", cls:"w3" },
-  { name:"Car detailing studio", kind:"Design preview", text:"Packages with Car and Jeep prices, and a WhatsApp booking button.", url:"", img:"", cls:"w4" }
-];
-
 (function(){
-  var wa = WHATSAPP_NUMBER.replace(/\D/g,"");
-  var w = document.querySelector("[data-whish]"); if (w) w.textContent = WHISH_NUMBER;
+  var WA = "96181900002";
+  var sheet = document.getElementById("sheet"), sticky = document.getElementById("sticky");
+  var form = document.getElementById("demo-form"), err = document.getElementById("err"), bubble = document.getElementById("bubble");
+  var fName = document.getElementById("f-name"), fBiz = document.getElementById("f-biz"), fIg = document.getElementById("f-ig");
+  var kind = "restaurant", lastFocus = null;
 
-  function esc(s){ return String(s).replace(/[&<>"]/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c];}); }
-  function card(x){
-    var shot = x.img ? '<img src="'+x.img+'" alt="'+esc(x.name)+' website" loading="lazy">'
-      : '<div class="car" aria-hidden="true"><b>DETAIL STUDIO</b><div class="hc"><strong>Showroom shine, every time</strong></div><div class="row">Full detail<em>$60</em></div><div class="row">Ceramic coat<em>$250</em></div><div class="bk">Book on WhatsApp</div></div>';
-    var tag = x.url ? 'a href="'+x.url+'" target="_blank" rel="noopener"' : 'div';
-    var end = x.url ? 'a' : 'div';
-    return '<'+tag+' class="work '+x.cls+'"><div class="shot">'+shot+'</div><div><span class="kind">'+esc(x.kind)+'</span><h3>'+esc(x.name)+'</h3><p>'+esc(x.text)+'</p>'+(x.url?'<span class="visit">Visit website</span>':'')+'</div></'+end+'>';
+  /* Sticky bar: shows after the first screen */
+  function onScroll(){ sticky.classList.toggle("show", window.scrollY > window.innerHeight * 0.9 && !sheet.classList.contains("open")); }
+  window.addEventListener("scroll", onScroll, {passive:true}); window.addEventListener("resize", onScroll); onScroll();
+
+  /* Demo form sheet */
+  function openSheet(){
+    if (sheet.classList.contains("open")) return;
+    lastFocus = document.activeElement;
+    sheet.classList.add("open"); sheet.setAttribute("aria-hidden","false");
+    document.documentElement.classList.add("lock"); sheet.scrollTop = 0; onScroll();
+    setTimeout(function(){ fName.focus({preventScroll:true}); }, 320);
   }
-  document.querySelectorAll("[data-works]").forEach(function(box){
-    var n = box.getAttribute("data-works"); var list = n==="all" ? WORKS : WORKS.slice(0, +n);
-    box.innerHTML = list.map(card).join("");
+  function closeSheet(){
+    if (!sheet.classList.contains("open")) return;
+    sheet.classList.remove("open"); sheet.setAttribute("aria-hidden","true");
+    document.documentElement.classList.remove("lock"); onScroll();
+    if (lastFocus && lastFocus.focus) lastFocus.focus({preventScroll:true});
+  }
+  document.querySelectorAll("[data-open]").forEach(function(a){
+    a.addEventListener("click", function(e){ e.preventDefault(); if (location.hash !== "#demo") history.pushState(null, "", "#demo"); openSheet(); });
   });
-  if (REVIEWS.length){
-    var html = REVIEWS.map(function(r){ return '<figure class="review" style="margin:0"><p>“'+esc(r.text)+'”</p><small>'+esc(r.name)+(r.business?', '+esc(r.business):'')+'</small></figure>'; }).join("");
-    document.querySelectorAll("[data-reviews]").forEach(function(b){ b.innerHTML = html; });
-    ["reviews-home","reviews-work"].forEach(function(id){ document.getElementById(id).hidden = false; });
-  }
+  function leave(){ if (location.hash === "#demo") history.back(); else closeSheet(); }
+  document.getElementById("close").addEventListener("click", leave);
+  sheet.addEventListener("click", function(e){ if (e.target === sheet) leave(); });
+  document.addEventListener("keydown", function(e){ if (e.key === "Escape" && sheet.classList.contains("open")) leave(); });
+  window.addEventListener("popstate", function(){ if (location.hash === "#demo") openSheet(); else closeSheet(); });
+  if (location.hash === "#demo") openSheet();
 
-  /* pages */
-  var pages = ["home","work","price","demo"];
-  function show(name){
-    if (pages.indexOf(name) < 0) name = "home";
-    pages.forEach(function(p){ document.getElementById("p-"+p).classList.toggle("on", p===name); });
-    document.querySelectorAll("[data-go]").forEach(function(a){ a.classList.toggle("on", a.getAttribute("data-go")===name && !a.classList.contains("logo")); });
-    document.getElementById("topbar").classList.toggle("white", name==="work");
-    document.querySelector(".top-cta").style.visibility = name==="demo" ? "hidden" : "";
-    document.querySelector('meta[name="theme-color"]').setAttribute("content", name==="work" ? "#FFFFFF" : "#FFF2CC");
-    window.scrollTo(0,0);
-  }
-  window.addEventListener("hashchange", function(){ show(location.hash.slice(1)); });
-  show(location.hash.slice(1));
+  /* FAQ: open and close on tap */
+  document.querySelectorAll(".faq .q").forEach(function(q){
+    q.addEventListener("click", function(){ var it = q.parentNode, open = it.classList.toggle("open"); q.setAttribute("aria-expanded", open ? "true" : "false"); });
+  });
 
-  /* demo form -> WhatsApp with a ready message */
-  document.getElementById("demo-form").addEventListener("submit", function(e){
+  /* Business type chips */
+  var chips = document.querySelectorAll(".chips .c");
+  chips.forEach(function(c){
+    c.addEventListener("click", function(){
+      chips.forEach(function(o){ o.classList.remove("on"); o.setAttribute("aria-checked","false"); });
+      c.classList.add("on"); c.setAttribute("aria-checked","true"); kind = c.getAttribute("data-k"); render();
+    });
+  });
+
+  /* Message built from the form */
+  function handle(){ var ig = fIg.value.trim(); if (ig && ig.charAt(0) !== "@" && !/[\/.]/.test(ig)) ig = "@" + ig; return ig; }
+  function message(){
+    var t = "Hi golive! I'd like a free demo website for my " + kind + ". My name is " + (fName.value.trim() || "[your name]") + ", my business is " + (fBiz.value.trim() || "[business name]");
+    var ig = handle(); if (ig) t += ", Instagram: " + ig;
+    return t + ".";
+  }
+  function render(){ bubble.textContent = message(); }
+  [fName, fBiz, fIg].forEach(function(f){ f.addEventListener("input", function(){ err.textContent = ""; render(); }); });
+  render();
+
+  form.addEventListener("submit", function(e){
     e.preventDefault();
-    var f = e.target, err = document.getElementById("err");
-    var el = f.elements, name = el["name"].value.trim(), biz = el["biz"].value.trim(), ig = el["ig"].value.trim(), note = el["note"].value.trim();
-    var kind = (f.querySelector('input[name="kind"]:checked')||{}).value || "";
-    if (!name){ err.textContent = "Add your name so we know who to answer."; el["name"].focus(); return; }
-    if (!biz){ err.textContent = "Add your business name."; el["biz"].focus(); return; }
+    if (!fName.value.trim()){ err.textContent = "Add your name so we know who to answer."; fName.focus(); return; }
+    if (!fBiz.value.trim()){ err.textContent = "Add your business name."; fBiz.focus(); return; }
     err.textContent = "";
-    var msg = "Hi GoLive! I'd like a free demo of my website.\n\n"
-      + "Name: " + name + "\n"
-      + "Business: " + biz + "\n"
-      + (kind ? "Type: " + kind + "\n" : "")
-      + (ig ? "Instagram: " + ig + "\n" : "")
-      + (note ? "What I want: " + note + "\n" : "");
-    window.open("https://wa.me/" + wa + "?text=" + encodeURIComponent(msg), "_blank", "noopener");
+    var url = "https://wa.me/" + WA + "?text=" + encodeURIComponent(message());
+    var w = window.open(url, "_blank");
+    if (w) { try { w.opener = null; } catch (x) {} } else { location.href = url; }
   });
 })();
 </script>
-</body>
-</html>
+</body></html>
