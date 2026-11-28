@@ -87,6 +87,24 @@ label{font-size:14px;font-weight:700;display:block;margin-bottom:8px}
 .plan{background:#fff;border-radius:24px;padding:20px 20px 14px;margin-top:12px}
 .plan.best{border:2.5px solid #5A31F4;padding:24px 20px 22px;box-shadow:0 20px 50px rgba(90,49,244,.2)}
 .row.sm{font-size:14px;padding:7px 0;align-items:flex-start;line-height:1.35}
+.pname{font-size:21px;font-weight:800;letter-spacing:-.02em}
+.pdesc{font-size:14px;font-weight:500;color:#5E5878;margin-top:3px;line-height:1.4}
+.plan.std{border:1.5px solid #E4DCFA;padding:24px 20px 22px}
+.pwrap .plan{margin-top:14px;display:flex;flex-direction:column}
+.pwrap .plan .btn{margin-top:auto}
+.pwrap .plan .badge{align-self:flex-start}
+.was{display:flex;align-items:center;gap:10px;margin-top:16px}
+.was s{font-size:20px;font-weight:700;color:#8A84A0}
+.save{background:#E3FBD3;color:#0F6B35;font-size:11.5px;font-weight:800;letter-spacing:.06em;border-radius:99px;padding:6px 10px}
+.free{background:#FFF8DB;border-radius:18px;padding:14px 16px 8px}
+.free .ft{font-size:11.5px;font-weight:800;letter-spacing:.1em;color:#8A6A00;margin-bottom:4px}
+.fr{display:flex;gap:10px;align-items:center;font-size:14.5px;font-weight:600;padding:6px 0}
+.gf{width:22px;height:22px;border-radius:50%;background:#FFD95A;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.then{font-size:14px;font-weight:500;color:#5E5878;line-height:1.45;margin:16px 0 18px}
+.then b{color:#160C33;font-weight:700}
+.btn.out{background:#fff;color:#5A31F4;border:2px solid #5A31F4;box-shadow:none}
+.launch{display:flex;align-items:center;gap:12px;background:#160C33;color:#fff;border-radius:18px;padding:14px 16px;margin-top:22px;font-size:14.5px;font-weight:700;line-height:1.35}
+.lpill{background:#FFD95A;color:#160C33;font-size:10.5px;font-weight:800;letter-spacing:.08em;border-radius:99px;padding:6px 10px;white-space:nowrap;flex-shrink:0}
 .ck.lt{background:#EDE6FF;margin-top:-1px}
 .sticky{position:fixed;left:50%;width:calc(100% - 24px);max-width:406px;bottom:14px;transform:translate(-50%,140%);transition:transform .35s ease;z-index:9;background:#160C33;border-radius:24px;padding:10px 10px 10px 18px;display:flex;align-items:center;justify-content:space-between;gap:10px;box-shadow:0 16px 40px rgba(22,12,51,.4)}
 .sticky.show{transform:translate(-50%,0)}
@@ -165,8 +183,9 @@ html.lock{overflow:hidden}
   .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
   .steps .step{flex-direction:column;border-bottom:0!important;border-top:1.5px solid #EEE9FA}
   .steps .time{margin-left:0}
-  .pwrap{display:grid;grid-template-columns:1fr 1fr;gap:16px;align-items:start;margin-top:26px}
-  .pwrap .plan.best,.pwrap .mo{margin-top:0!important}
+  .pwrap{display:grid;grid-template-columns:1fr 1fr;gap:16px;align-items:stretch;margin-top:12px}
+  .pwrap .plan{margin-top:0!important}
+  .launch{max-width:none}
   .ra{display:grid;grid-template-columns:1fr 1fr;gap:16px;align-items:stretch}
   .ra .rev,.ra .about{margin-top:24px}
   .faq{max-width:760px}
@@ -188,7 +207,7 @@ html.lock{overflow:hidden}
     <p class="mut" style="font-size:17px;margin-top:16px">Professional websites for Lebanese businesses. See yours free. Pay only if you love it.</p>
     <a class="btn" id="heroBtn" href="#demo" data-open style="margin-top:24px"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-12.3 7.4L3 21l2.1-5.7A8.4 8.4 0 1 1 21 11.5z"/></svg>Get my free demo</a>
     <p class="note" style="margin-top:12px">Opens WhatsApp with your message ready</p>
-    <div class="stats"><div class="stat"><b>$99</b><span>one time</span></div><div class="stat"><b>48h</b><span>delivery</span></div><div class="stat"><b>Free</b><span>demo first</span></div></div>
+    <div class="stats"><div class="stat"><b>$199</b><span>from</span></div><div class="stat"><b>48h</b><span>delivery</span></div><div class="stat"><b>Free</b><span>demo first</span></div></div>
   </div>
   <div class="stage">
     <div class="disc"></div>
@@ -244,33 +263,41 @@ html.lock{overflow:hidden}
   <div class="eyebrow">What we build</div>
   <h2 style="margin-top:12px">Find the one for your business.</h2>
   <div class="svcs" style="margin-top:22px">
-  <div class="svc"><div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="3"/><path d="M3 9h18"/></svg></div><div><b>Business websites</b><p>Restaurants, cafés, clinics, salons. Menu or services, photos, map and WhatsApp.</p><em>$99</em></div></div>
-  <div class="svc"><div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 9h16l-1 11H5zM8 9V7a4 4 0 0 1 8 0v2"/></svg></div><div><b>Online stores</b><p>Shops that sell products. Catalogue, prices, categories and ordering.</p><em>From $249</em></div></div>
-  <div class="svc"><div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="5" width="16" height="16" rx="3"/><path d="M4 10h16M9 3v4M15 3v4"/></svg></div><div><b>Booking websites</b><p>Hotels, guesthouses, clinics, salons. Appointments and reservations.</p><em>From $199</em></div></div>
+  <div class="svc"><div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="3"/><path d="M3 9h18"/></svg></div><div><b>Business websites</b><p>Restaurants, cafés, clinics, salons. Menu or services, photos, map and WhatsApp.</p><em>Small business plan</em></div></div>
+  <div class="svc"><div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 9h16l-1 11H5zM8 9V7a4 4 0 0 1 8 0v2"/></svg></div><div><b>Online stores</b><p>Shops that sell products. Catalogue, prices, categories and ordering.</p><em>Business plan</em></div></div>
+  <div class="svc"><div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="5" width="16" height="16" rx="3"/><path d="M4 10h16M9 3v4M15 3v4"/></svg></div><div><b>Booking websites</b><p>Hotels, guesthouses, clinics, salons. Appointments and reservations.</p><em>Business plan</em></div></div>
   </div>
 </div>
 
 <div class="sec price" id="price">
   <div class="eyebrow">Price</div>
-  <h2 style="margin-top:12px">One simple price. No hidden fees.</h2>
+  <h2 style="margin-top:12px">Pick your plan.</h2>
+  <div class="launch"><span class="lpill">LAUNCH OFFER</span><span>Launch prices for our first 20 clients only.</span></div>
   <div class="pwrap">
-  <div class="plan best" style="margin-top:26px">
-    <div class="badge">BUSINESS WEBSITE</div>
-    <div class="amt"><b>$99</b><span>one time</span></div>
-    <div style="margin:16px 0 20px;border-top:1.5px solid #EEE9FA;padding-top:10px">
-      <div class="row"><div class="ck"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5 9-10"/></svg></div>Custom website design</div><div class="row"><div class="ck"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5 9-10"/></svg></div>Mobile-friendly layout</div><div class="row"><div class="ck"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5 9-10"/></svg></div>Your business info and photos</div><div class="row"><div class="ck"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5 9-10"/></svg></div>WhatsApp ordering or booking</div><div class="row"><div class="ck"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5 9-10"/></svg></div>Custom domain setup</div><div class="row"><div class="ck"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5 9-10"/></svg></div>Free demo before payment</div><div class="row"><div class="ck"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5 9-10"/></svg></div>Website launch</div>
-    </div>
+  <div class="plan std">
+    
+    <div class="pname">Small business</div>
+    <div class="pdesc">Cafés, salons, clinics, small shops</div>
+    <div class="was"><s>$249</s><span class="save">SAVE 20%</span></div>
+    <div class="amt" style="margin-top:8px"><b>$199</b><span>one payment</span></div>
+    <div style="margin:16px 0 14px;border-top:1.5px solid #EEE9FA;padding-top:10px"><div class="row"><div class="ck"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5 9-10"/></svg></div>Custom website, up to 5 pages</div><div class="row"><div class="ck"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5 9-10"/></svg></div>Works perfectly on phones</div><div class="row"><div class="ck"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5 9-10"/></svg></div>Your photos, prices and info</div><div class="row"><div class="ck"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5 9-10"/></svg></div>WhatsApp order or booking button</div></div>
+    <div class="free"><div class="ft">FREE WITH THIS PLAN</div><div class="fr"><div class="gf"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#160C33" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="8" width="18" height="5" rx="1"/><path d="M5 13v8h14v-8M12 8v13M12 8S10.500 3 8 3a2.500 2.500 0 0 0 0 5M12 8s1.500-5 4-5a2.500 2.500 0 0 1 0 5"/></svg></div>Domain free for 1 year</div><div class="fr"><div class="gf"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#160C33" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="8" width="18" height="5" rx="1"/><path d="M5 13v8h14v-8M12 8v13M12 8S10.500 3 8 3a2.500 2.500 0 0 0 0 5M12 8s1.500-5 4-5a2.500 2.500 0 0 1 0 5"/></svg></div>Free demo before you pay</div></div>
+    <p class="then">Then <b>$9 a month</b> for hosting and changes. Stop any time.</p>
+    <a class="btn out" href="#demo" data-open><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#5A31F4" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-12.3 7.4L3 21l2.1-5.7A8.4 8.4 0 1 1 21 11.5z"/></svg>Get my free demo</a>
+  </div>
+  <div class="plan best">
+    <div class="badge" style="margin-bottom:14px">MOST COMPLETE</div>
+    <div class="pname">Business</div>
+    <div class="pdesc">Restaurants, stores, guesthouses, bigger brands</div>
+    <div class="was"><s>$599</s><span class="save">SAVE 25%</span></div>
+    <div class="amt" style="margin-top:8px"><b>$449</b><span>one payment</span></div>
+    <div style="margin:16px 0 14px;border-top:1.5px solid #EEE9FA;padding-top:10px"><div class="row"><div class="ck"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5 9-10"/></svg></div>Everything in Small business</div><div class="row"><div class="ck"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5 9-10"/></svg></div>Online ordering or booking</div><div class="row"><div class="ck"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5 9-10"/></svg></div>Your own dashboard to track orders, bookings and customers</div><div class="row"><div class="ck"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5 9-10"/></svg></div>Add products and prices yourself</div><div class="row"><div class="ck"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5 9-10"/></svg></div>Priority changes</div></div>
+    <div class="free"><div class="ft">FREE WITH THIS PLAN</div><div class="fr"><div class="gf"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#160C33" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="8" width="18" height="5" rx="1"/><path d="M5 13v8h14v-8M12 8v13M12 8S10.500 3 8 3a2.500 2.500 0 0 0 0 5M12 8s1.500-5 4-5a2.500 2.500 0 0 1 0 5"/></svg></div>Domain free for 2 years</div><div class="fr"><div class="gf"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#160C33" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="8" width="18" height="5" rx="1"/><path d="M5 13v8h14v-8M12 8v13M12 8S10.500 3 8 3a2.500 2.500 0 0 0 0 5M12 8s1.500-5 4-5a2.500 2.500 0 0 1 0 5"/></svg></div>First month of hosting free</div><div class="fr"><div class="gf"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#160C33" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="8" width="18" height="5" rx="1"/><path d="M5 13v8h14v-8M12 8v13M12 8S10.500 3 8 3a2.500 2.500 0 0 0 0 5M12 8s1.500-5 4-5a2.500 2.500 0 0 1 0 5"/></svg></div>Free demo before you pay</div></div>
+    <p class="then">Then <b>$19 a month</b> for hosting and changes. Stop any time.</p>
     <a class="btn" href="#demo" data-open><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-12.3 7.4L3 21l2.1-5.7A8.4 8.4 0 1 1 21 11.5z"/></svg>Get my free demo</a>
   </div>
-  <div class="mo">
-    <div class="hd"><b>$9</b><span>a month, after launch</span></div>
-    <div class="lbl">INCLUDED</div>
-    <div class="row sm"><div class="ck lt"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#5A31F4" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5 9-10"/></svg></div>Hosting and security</div><div class="row sm"><div class="ck lt"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#5A31F4" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5 9-10"/></svg></div>Domain renewal</div><div class="row sm"><div class="ck lt"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#5A31F4" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5 9-10"/></svg></div>Small changes: text, photos, prices, hours</div>
-    <div class="lbl">EXTRA, QUOTED FIRST</div>
-    <div class="xr"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#5A31F4" stroke-width="2.8" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg>New pages or new features</div>
-    <div class="xr"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#5A31F4" stroke-width="2.8" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg>A full redesign</div>
   </div>
-  </div>
+  <p class="note" style="margin-top:18px">Agencies in Lebanon usually start from $1,000.</p>
   <div class="promise"><div class="ic" style="width:46px;height:46px;border-radius:15px;background:#2B1F52"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#FFD95A" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 4 6v6c0 4.5 3.400 8 8 9 4.600-1 8-4.500 8-9V6z"/><path d="m9 12 2 2 4-4"/></svg></div><b>You see your website first. You pay only if you love it.</b></div>
 </div>
 
@@ -301,12 +328,12 @@ html.lock{overflow:hidden}
   <div class="faq" style="margin-top:10px">
     <div class="item open"><button class="q" type="button" aria-expanded="true">Do I pay anything before I see my demo?<svg class="mi" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#5A31F4" stroke-width="2.8" stroke-linecap="round"><path d="M5 12h14"/></svg><svg class="pl" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#5A31F4" stroke-width="2.8" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></button><div class="ans">No. We build your demo first, for free. You pay only if you approve it.</div></div>
     <div class="item"><button class="q" type="button" aria-expanded="false">How long does it take?<svg class="mi" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#5A31F4" stroke-width="2.8" stroke-linecap="round"><path d="M5 12h14"/></svg><svg class="pl" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#5A31F4" stroke-width="2.8" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></button><div class="ans">Your free demo is ready in 48 hours. Once you approve it and pay, your website goes live the same day.</div></div>
-    <div class="item"><button class="q" type="button" aria-expanded="false">What is included in the $99?<svg class="mi" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#5A31F4" stroke-width="2.8" stroke-linecap="round"><path d="M5 12h14"/></svg><svg class="pl" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#5A31F4" stroke-width="2.8" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></button><div class="ans">Custom design, a layout that works on phones, your business info, photos and prices, a WhatsApp order or booking button, your own domain set up for you, a free demo before you pay, and the launch.</div></div>
-    <div class="item"><button class="q" type="button" aria-expanded="false">Why is there a $9 monthly fee?<svg class="mi" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#5A31F4" stroke-width="2.8" stroke-linecap="round"><path d="M5 12h14"/></svg><svg class="pl" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#5A31F4" stroke-width="2.8" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></button><div class="ans">It keeps your website online. It covers hosting, security, your domain renewal, and small changes like new prices, photos, text or opening hours.</div></div>
+    <div class="item"><button class="q" type="button" aria-expanded="false">What is included in each plan?<svg class="mi" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#5A31F4" stroke-width="2.8" stroke-linecap="round"><path d="M5 12h14"/></svg><svg class="pl" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#5A31F4" stroke-width="2.8" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></button><div class="ans">Small business ($199): custom website up to 5 pages, phone-friendly, your photos, prices and info, WhatsApp button, domain free for 1 year.<br><br>Business ($449): everything in Small business plus online ordering or booking, your own dashboard to track orders and customers, adding products yourself, domain free for 2 years and the first month of hosting free.</div></div>
+    <div class="item"><button class="q" type="button" aria-expanded="false">Why is there a monthly fee?<svg class="mi" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#5A31F4" stroke-width="2.8" stroke-linecap="round"><path d="M5 12h14"/></svg><svg class="pl" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#5A31F4" stroke-width="2.8" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></button><div class="ans">It keeps your website online: hosting, security, domain renewal after the free period, and small changes. $9 a month for Small business, $19 a month for Business.</div></div>
     <div class="item"><button class="q" type="button" aria-expanded="false">Do I own my website and domain?<svg class="mi" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#5A31F4" stroke-width="2.8" stroke-linecap="round"><path d="M5 12h14"/></svg><svg class="pl" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#5A31F4" stroke-width="2.8" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></button><div class="ans">Yes. The domain is registered in your business name and stays yours, even if you stop working with us. The design and content we make for you are yours too.</div></div>
     <div class="item"><button class="q" type="button" aria-expanded="false">What happens if I cancel?<svg class="mi" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#5A31F4" stroke-width="2.8" stroke-linecap="round"><path d="M5 12h14"/></svg><svg class="pl" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#5A31F4" stroke-width="2.8" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></button><div class="ans">You can cancel any time, no contract. Your website stays online until the end of the month you paid for. Your domain stays yours, and we can move it to you or to another provider.</div></div>
-    <div class="item"><button class="q" type="button" aria-expanded="false">Can I request changes?<svg class="mi" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#5A31F4" stroke-width="2.8" stroke-linecap="round"><path d="M5 12h14"/></svg><svg class="pl" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#5A31F4" stroke-width="2.8" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></button><div class="ans">Yes. Send us a WhatsApp message. Small changes (text, photos, prices, hours) are included in the $9 a month. New pages, new features or a redesign are quoted before we start.</div></div>
-    <div class="item"><button class="q" type="button" aria-expanded="false">Can you build an online store?<svg class="mi" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#5A31F4" stroke-width="2.8" stroke-linecap="round"><path d="M5 12h14"/></svg><svg class="pl" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#5A31F4" stroke-width="2.8" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></button><div class="ans">Yes. Online stores start from $249, with products, prices, categories and ordering. Ask us on WhatsApp and we'll send you a free demo first.</div></div>
+    <div class="item"><button class="q" type="button" aria-expanded="false">Can I request changes?<svg class="mi" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#5A31F4" stroke-width="2.8" stroke-linecap="round"><path d="M5 12h14"/></svg><svg class="pl" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#5A31F4" stroke-width="2.8" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></button><div class="ans">Yes. Send us a WhatsApp message. Small changes (text, photos, prices, hours) are included in your monthly plan. New pages, new features or a redesign are quoted before we start.</div></div>
+    <div class="item"><button class="q" type="button" aria-expanded="false">Can you build an online store?<svg class="mi" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#5A31F4" stroke-width="2.8" stroke-linecap="round"><path d="M5 12h14"/></svg><svg class="pl" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#5A31F4" stroke-width="2.8" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></button><div class="ans">Yes, that's our Business plan, with products, prices, ordering and your own dashboard.</div></div>
   </div>
 </div>
 
@@ -314,7 +341,7 @@ html.lock{overflow:hidden}
   <h2 style="font-size:35px">See your website before you decide.</h2>
   <p style="font-size:16px;font-weight:500;color:#E4DCFF;margin-top:14px;line-height:1.5">Free demo in 48 hours. No payment.</p>
 </div>
-<div class="sticky" id="sticky"><div><b>Free demo first</b><small>$99 · ready in 48 hours</small></div><a class="sbtn" href="#demo" data-open><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-12.3 7.4L3 21l2.1-5.7A8.4 8.4 0 1 1 21 11.5z"/></svg>Get my free demo</a></div>
+<div class="sticky" id="sticky"><div><b>Free demo first</b><small>From $199 · ready in 48h</small></div><a class="sbtn" href="#demo" data-open><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-12.3 7.4L3 21l2.1-5.7A8.4 8.4 0 1 1 21 11.5z"/></svg>Get my free demo</a></div>
 </div>
 
 <!-- ============ DEMO SHEET ============ -->
